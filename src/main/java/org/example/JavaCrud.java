@@ -43,6 +43,8 @@ public class JavaCrud {
                         databaseService.getEmployeeByID(Integer.parseInt(scanner.nextLine()));
                         break;
                     case 4:
+                        System.out.println("Emter ID of an Employee");
+                        databaseService.deleteEmployeeById(Integer.parseInt(scanner.nextLine()));
 
                         break;
                     case 5:

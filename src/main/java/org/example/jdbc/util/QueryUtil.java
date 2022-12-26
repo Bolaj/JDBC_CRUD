@@ -14,4 +14,8 @@ public class QueryUtil {
     {
         return "SELECT * FROM EMPLOYEE_INFO WHERE EMPLOYEE_ID =" +employeeId;
     }
+    public static String deleteEmployeeById(int employeeId)
+    {
+        return "DELETE FROM EMPLOYEE_INFO WHERE EMPLOYEE_ID = "+employeeId;
+    }
 }
