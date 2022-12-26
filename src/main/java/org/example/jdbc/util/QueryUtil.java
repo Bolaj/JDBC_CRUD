@@ -9,5 +9,9 @@ public class QueryUtil {
     public static  String selectAllEmployeeQuery()
     {
         return "SELECT * FROM EMPLOYEE_INFO";
+    }//
+    public static String selectEmployeeById(int employeeId)
+    {
+        return "SELECT * FROM EMPLOYEE_INFO WHERE EMPLOYEE_ID =" +employeeId;
     }
 }

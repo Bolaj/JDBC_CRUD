@@ -39,6 +39,8 @@ public class JavaCrud {
                         break;
                     case 3:
 
+                        System.out.println("Enter ID of an Employee");
+                        databaseService.getEmployeeByID(Integer.parseInt(scanner.nextLine()));
                         break;
                     case 4:
 

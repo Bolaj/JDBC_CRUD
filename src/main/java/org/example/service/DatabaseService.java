@@ -56,5 +56,32 @@ public class DatabaseService {
         System.out.println("Employee Address: "+employee.getEmployeeAddress());
         System.out.println("Employee Salary: "+employee.getEmployeeSalary());
         System.out.println("------------------------------------------");
-    }
+    }//End of getAllEmployees
+    public boolean getEmployeeByID(int id) throws SQLException
+    {
+        boolean isFound = false;
+        try(Connection connection = databaseUtil.getConnection();
+        Statement statement = connection.createStatement();
+        ResultSet resultSet = statement.executeQuery(QueryUtil.selectEmployeeById(id));
+
+        )
+        {
+            if(resultSet.next())
+            {
+                isFound = true;
+                printEmployee(new Employee(resultSet.getInt("EMPLOYEE_ID"),
+                        resultSet.getString("EMPLOYEE_NAME"),
+                        resultSet.getString("EMPLOYEE_ADDRESS"),
+                        resultSet.getDouble("EMPLOYEE_SALARY")
+                ));
+
+            }else {
+                System.out.println("Record Not Found for ID " +id);
+            }
+
+        }
+
+        return isFound;
+    }//End of getEmployeeByID
+
 }
