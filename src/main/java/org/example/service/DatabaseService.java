@@ -98,6 +98,30 @@ public class DatabaseService {
          }
 
         }
-    }
+    }//End of deleteEmployeeByID
+    public void updateEmployee(Employee employee) throws SQLException
+    {
+        try(Connection connection = databaseUtil.getConnection();
+            PreparedStatement preparedStatement = connection
+                    .prepareStatement(QueryUtil.updateEmployeeQuery(employee.getEmployeeId()))
+
+        )
+        {
+            preparedStatement.setString(1, employee.getEmployeeName());
+            preparedStatement.setString(2, employee.getEmployeeAddress());
+            preparedStatement.setDouble(3, employee.getEmployeeSalary());
+
+            // preparedStatement.executeUpdate();
+            int rows = preparedStatement.executeUpdate();
+            if(rows > 0 )
+            {
+                System.out.println("Record Has Been Updated Successfully");
+            }else{
+                System.out.println("Record Update Failed..");
+            }
+
+        }
+
+    }//End of updateEmployee
 
 }

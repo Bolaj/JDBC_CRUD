@@ -18,4 +18,8 @@ public class QueryUtil {
     {
         return "DELETE FROM EMPLOYEE_INFO WHERE EMPLOYEE_ID = "+employeeId;
     }
+    public static String updateEmployeeQuery(int employeeId)
+    {
+        return "UPDATE EMPLOYEE_INFO SET EMPLOYEE_NAME = ?, EMPLOYEE_ADDRESS = ?, EMPLOYEE_SALARY = ? WHERE EMPLOYEE_ID = "+ employeeId;
+    }
 }

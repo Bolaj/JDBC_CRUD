@@ -43,12 +43,23 @@ public class JavaCrud {
                         databaseService.getEmployeeByID(Integer.parseInt(scanner.nextLine()));
                         break;
                     case 4:
-                        System.out.println("Emter ID of an Employee");
+                        System.out.println("Enter ID of an Employee");
                         databaseService.deleteEmployeeById(Integer.parseInt(scanner.nextLine()));
 
                         break;
                     case 5:
+                        System.out.println("Enter ID of an Employee");
+                        int updateId = Integer.parseInt(scanner.nextLine());
+                        boolean isFound = databaseService.getEmployeeByID(updateId);
+                        if(isFound){
+                            System.out.println("Enter Name, Address, and Salary");
+                            Employee employee = new Employee(updateId,
+                                    scanner.nextLine(),
+                                    scanner.nextLine(),
+                                    Double.parseDouble(scanner.nextLine()));
+                            databaseService.updateEmployee(employee);
 
+                        }
                         break;
                     case 6 :
 

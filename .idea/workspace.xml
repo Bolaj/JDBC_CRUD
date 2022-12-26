@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d072398d-bd59-4d7a-a810-e0f9c8adc5d3" name="Changes" comment="Select EmployeeByID completed!">
+    <list default="true" id="d072398d-bd59-4d7a-a810-e0f9c8adc5d3" name="Changes" comment=" DeleteEmployeeByID completed!">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/JavaCrud.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/JavaCrud.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/jdbc/util/QueryUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/jdbc/util/QueryUtil.java" afterDir="false" />
@@ -104,7 +104,21 @@
       <option name="project" value="LOCAL" />
       <updated>1672030447646</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Select DeleteEmployeeByID completed!">
+      <created>1672031156325</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1672031156325</updated>
+    </task>
+    <task id="LOCAL-00006" summary=" DeleteEmployeeByID completed!">
+      <created>1672031207207</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1672031207207</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -121,6 +135,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="This is a Java CRUD Console App. Create &amp; Select operations completed!" />
     <MESSAGE value="Select EmployeeByID completed!" />
-    <option name="LAST_COMMIT_MESSAGE" value="Select EmployeeByID completed!" />
+    <MESSAGE value="Select DeleteEmployeeByID completed!" />
+    <MESSAGE value=" DeleteEmployeeByID completed!" />
+    <option name="LAST_COMMIT_MESSAGE" value=" DeleteEmployeeByID completed!" />
   </component>
 </project>
