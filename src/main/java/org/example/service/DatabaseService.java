@@ -83,5 +83,21 @@ public class DatabaseService {
 
         return isFound;
     }//End of getEmployeeByID
+    public void deleteEmployeeById(int employeeId) throws SQLException
+    {
+        try(Connection connection = databaseUtil.getConnection();
+        Statement statement = connection.createStatement();
+
+        )
+        {
+         int rows =   statement.executeUpdate(QueryUtil.deleteEmployeeById(employeeId));
+         if (rows > 0){
+             System.out.println("Record Deleted Successfully");
+         }else{
+             System.out.println("Something Went Wrong..");
+         }
+
+        }
+    }
 
 }
